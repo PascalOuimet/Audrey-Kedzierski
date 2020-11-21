@@ -6,6 +6,13 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
     padding-bottom: 10%;
+
+    @include respond(tab-land) {
+        padding: 10rem 0;
+        clip-path: none;
+        margin-top: 0;
+        -webkit-clip-path: none;
+      }
     
     p{
         text-align: left;

@@ -33,4 +33,60 @@
       }
     }
   }
+
+  .field{
+    padding-right:8px;
+    float:left;
+
+    @include respond(phone) {
+      width:100%;
+      padding-right:0;
+
+      label{        
+        margin-top:10px;
+      }
+      input{
+        width:100%;
+      }
+    }
+  }
+
+  .checkbox{
+    padding-right:0;
+    label{
+      margin:20px 5px 0 0;
+    }
+    input{
+      color:red;
+    }
+
+    @include respond(phone) {
+        margin-bottom:-14px;
+    }
+  }
+
+  label{
+    font: 400 13.3333px Arial;   
+    @include respond(phone) {
+        font-size:16px;        
+    } 
+  }
+
+  input, textarea{
+    background:none;
+    outline:0;
+    border:2px solid $white-color;
+    color:$white-color;
+    padding: 0.8rem 1.6rem;
+    font: 400 13.3333px Arial;
+  }
+
+  .message{
+    clear: both;
+    padding:20px 0;
+  }
+
+  textarea{    
+    width:100%;
+  }
 }

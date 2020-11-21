@@ -29,7 +29,7 @@ const Header = () => {
             {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name || 'Your Name'}</span>
             <br />
-            {subtitle || "I'm the Unknown Developer."}
+            <span className="subtitle">{subtitle || "I'm the Unknown Developer."}</span>
           </h1>
           <p className="hero-quote"><q>Our wounds are often the openings into the best and most beautiful parts of us.</q><br/>– David Richo</p>
         </Fade>

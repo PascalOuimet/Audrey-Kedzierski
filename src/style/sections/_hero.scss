@@ -39,11 +39,18 @@
       text-align: center;
     }
     @include respond(phone) {
-      font-size: 3.5rem;
-      line-height: 1.5;
+      font-size: 3rem;
+      line-height: 1.2;
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
+    }
+
+    .subtitle {
+      font-size: 2.57rem;
+      @include respond(phone) {
+        font-size: 2rem;        
+      }
     }
   }
 
@@ -64,6 +71,16 @@
       @include respond(phone) {
         font-size: 2rem;
       }
+    }    
+  }
+     
+  .cta-btn{
+    @include respond(phone) {
+    display:block;
+    margin-bottom:-2px;
+    a{
+    font-size:1.3rem;
     }
   }
+  }  
 }

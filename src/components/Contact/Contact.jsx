@@ -16,26 +16,25 @@ const Contact = () => {
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
               {cta || 'Would you like to work with me? Awesome!'}
-            </p>
-            <p>Les modes de paiement sont par transfert interac /bancaire.</p>
+            </p>            
             <form method="post" data-netlify="true" name="contact" action="/success">
               <div className="field half first">
-                <label htmlFor="name">Nom</label>
+                <label htmlFor="name">Nom</label><br/>
                 <input type="text" name="name" id="name" />
               </div>
               <div className="field half">
-                <label htmlFor="phone">Téléphone</label>
+                <label htmlFor="phone">Téléphone</label><br/>
                 <input type="tel" name="phone" id="phone" />
               </div>
               <div className="field half">
-                <label htmlFor="email">Courriel</label>
+                <label htmlFor="email">Courriel</label><br/>
                 <input type="email" name="email" id="email" />
               </div>
-              <div className="field half">
+              <div className="field checkbox">
                 <label htmlFor="voicemail">Acceptez-vous que je vous laisse un message sur votre boîte vocale?</label>
                 <input type="checkbox" name="voicemail" id="voicemail" />
               </div>
-              <div className="field message">
+              <div className="message">
                 <label htmlFor="message">Message</label>
                 <textarea name="message" id="message" rows="4"></textarea>
               </div>
@@ -45,6 +44,7 @@ const Contact = () => {
               <input type="hidden" name="subject" value="Pratique autonome" />
               <input type="hidden" name="form-name" value="contact" />
             </form>
+            <p>Les modes de paiement sont par transfert interac /bancaire.</p>
           </div>
         </Fade>
       </Container>

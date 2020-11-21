@@ -2,6 +2,7 @@
 
 h1 {
   font-weight: 700;
+  line-height: .8;
 }
 
 p,
@@ -19,7 +20,8 @@ a:link,
 a:hover,
 a:visited,
 a:active {
-  text-decoration: none;
+  text-decoration: underline;
+  color: $dark-blue-text
 }
 
 a:hover {
@@ -30,6 +32,12 @@ ul {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+
+  @include respond(phone) {
+    columns: 1;
+  -webkit-columns: 1;
+  -moz-columns: 1;
+  }
 }
 
 .section-title {

@@ -6,10 +6,10 @@ import Title from '../Title/Title';
 const Services = () =>
     <section id="services">
         <Container>
-        <Fade bottom duration={1000} delay={800} distance="30px">
+        <Fade bottom duration={1000} delay={500} distance="30px">
             <Title title="Services" />
             <p>Les services sont offerts pour les adolescents, adultes et personés âgés.</p>
-            <p>Les thèmes possibles sont vastes et dépendent de vous.<br />À titre indicatif, nous pouvons aborder des difficultés émotionnelles ou relationnelles telles que: les difficultés amoureuses, les problèmes de communication, le manque de confiance ou d'estime de soi, les séparations, le stress et l'anxiété de performance, l'image corporelle déficitaire, etc.</p>
+            <p>Les thèmes possibles sont vastes et dépendent de vous. À titre indicatif, nous pouvons aborder plusieurs difficultés émotionnelles ou relationnelles.</p>
             <p>Ceci n’est pas une liste exhaustive, mais il m’est possible de vous accompagner dans des contextes multiples incluant : </p>
             <ul>
                 <li>Affirmation de soi</li>
@@ -29,6 +29,7 @@ const Services = () =>
                 <li>Expression des émotions et des désirs</li>
                 <li>Gestion des émotions</li>
                 <li>Hyper sexualisation</li>
+                <li>Humeur dépressive</li>
                 <li>Idées suicidaires</li>
                 <li>Identité et orientation sexuelle</li>
                 <li>Image corporelle / épanouissement sexuelle</li>
@@ -44,7 +45,7 @@ const Services = () =>
                 <li>Stress, anxiété (anxiété de performance)</li>
                 <li>Troubles alimentaires</li>
                 <li>Violence conjugale / Conflits dans les relations amoureuses</li>
-                <li>Et plus encore</li>
+                <li>Et plus encore !</li>
             </ul>
             </Fade>
         </Container>

@@ -2,7 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
+import AboutImg from './AboutImg';
+import AboutImgMobile from './AboutImgMobile';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
@@ -22,20 +23,22 @@ const About = () => {
     }
   }, []);
 
+  const aboutImg = isMobile ? <AboutImgMobile alt="Audrey Kedzierski" filename={img} /> : <AboutImg alt="Audrey Kedzierski" filename={img} />
+
   return (
     <section id="about">
       <Container>
         <Title title="À propos" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
+            <Fade bottom duration={1000} delay={400} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+              {aboutImg}
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
@@ -50,9 +53,6 @@ const About = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphFive || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">

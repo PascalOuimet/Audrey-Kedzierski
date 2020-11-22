@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Audrey Kedzierski', // e.g: 'Name | Developer'
+  title: 'Audrey Kedzierski | Sexologue', // e.g: 'Name | Developer'
   lang: 'fr', // e.g: en, es, fr, jp
   description: 'Sexologue - Services de relation d’aide sexologique et de suivi psychosocial', // e.g: Welcome to my website
 };

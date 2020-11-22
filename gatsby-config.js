@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Audrey Kedzierski Sexologue`,
+        short_name: `Audrey Kedzierski`,
         start_url: `/`,
         background_color: `#ecebe2`,
         theme_color: `#223745`,

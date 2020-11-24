@@ -2,15 +2,15 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Audrey Kedzierski | Sexologue', // e.g: 'Name | Developer'
-  lang: 'fr', // e.g: en, es, fr, jp
-  description: 'Sexologue - Services de relation d’aide sexologique et de suivi psychosocial', // e.g: Welcome to my website
+  title: 'Audrey Kedzierski | Sexologist', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: 'Sexologist - Services de relation d’aide sexologique et de suivi psychosocial', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
   title: 'Audrey Kedzierski',
-  name: 'Sexologue',
+  name: 'Sexologist',
   subtitle: 'Services de relation d’aide sexologique et de suivi psychosocial'
 };
 

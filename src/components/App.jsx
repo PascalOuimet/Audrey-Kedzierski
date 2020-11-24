@@ -6,12 +6,11 @@ import Pricing from './Pricing/Pricing';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import { Link } from "gatsby"
 
 import { PortfolioProvider } from '../context/context';
 
-import { heroData, aboutData, contactData, footerData } from '../mock/data';
-
-function App() {
+function App({lang, heroData, aboutData, contactData, footerData}) {  
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});  
   const [contact, setContact] = useState({});
@@ -24,8 +23,11 @@ function App() {
     setFooter({ ...footerData });
   }, []);
 
-  return (
+  const switchLang = lang === "en" ? {url:"/", text:"FR"} : {url:"/en", text:"EN"}
+
+  return (    
     <PortfolioProvider value={{ hero, about, contact, footer }}>
+      <span className="cta-btn cta-btn--hero switchLang"><Link to={switchLang.url}>{switchLang.text}</Link></span>
       <Hero />
       <Proceedings />
       <Services />

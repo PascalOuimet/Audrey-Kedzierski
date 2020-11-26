@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
-import Proceedings from './Proceedings/Proceedings';
+import Process from './Process/Process';
 import Services from './Services/Services';
 import Pricing from './Pricing/Pricing';
 import About from './About/About';
@@ -10,26 +10,30 @@ import { Link } from "gatsby"
 
 import { PortfolioProvider } from '../context/context';
 
-function App({lang, heroData, aboutData, contactData, footerData}) {  
+function App({lang, heroData, processData, servicesData, pricingData, aboutData, contactData}) {  
   const [hero, setHero] = useState({});
+  const [process, setProcess] = useState({});
+  const [services, setServices] = useState({});
+  const [pricing, setPricing] = useState({});
   const [about, setAbout] = useState({});  
   const [contact, setContact] = useState({});
-  const [footer, setFooter] = useState({});
 
   useEffect(() => {
     setHero({ ...heroData });
+    setProcess({ ...processData });
+    setServices({ ...servicesData });
+    setPricing({ ...pricingData });
     setAbout({ ...aboutData });    
-    setContact({ ...contactData });
-    setFooter({ ...footerData });
+    setContact({ ...contactData });    
   }, []);
 
   const switchLang = lang === "en" ? {url:"/", text:"FR"} : {url:"/en", text:"EN"}
 
   return (    
-    <PortfolioProvider value={{ hero, about, contact, footer }}>
+    <PortfolioProvider value={{ hero, process, services, pricing, about, contact }}>
       <span className="cta-btn cta-btn--hero switchLang"><Link to={switchLang.url}>{switchLang.text}</Link></span>
       <Hero />
-      <Proceedings />
+      <Process />
       <Services />
       <Pricing />
       <About />      

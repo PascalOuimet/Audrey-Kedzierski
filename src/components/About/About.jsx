@@ -8,7 +8,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, paragraphFive, resume } = about;
+  const { title, img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, paragraphFive, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -28,7 +28,7 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="À propos" />
+        <Title title={title || ""} />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={400} distance="30px">

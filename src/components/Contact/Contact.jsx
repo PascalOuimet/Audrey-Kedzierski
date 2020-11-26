@@ -6,7 +6,7 @@ import Title from '../Title/Title';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
-  const { cta } = contact;
+  const { cta, methods, fname, fphone, femail, fagree, fmessage, fsend, fsuccessPage } = contact;
 
   return (
     <section id="contact">
@@ -17,34 +17,34 @@ const Contact = () => {
             <p className="contact-wrapper__text">
               {cta || 'Would you like to work with me? Awesome!'}
             </p>            
-            <form method="post" data-netlify="true" name="contact" action="/success">
+            <form method="post" data-netlify="true" name="contact" action={fsuccessPage}>
               <div className="field half first">
-                <label htmlFor="name">Nom</label><br/>
+                <label htmlFor="name">{fname}</label><br/>
                 <input type="text" name="name" id="name" />
               </div>
               <div className="field half">
-                <label htmlFor="phone">Téléphone</label><br/>
+                <label htmlFor="phone">{fphone}</label><br/>
                 <input type="tel" name="phone" id="phone" />
               </div>
               <div className="field half">
-                <label htmlFor="email">Courriel</label><br/>
+                <label htmlFor="email">{femail}</label><br/>
                 <input type="email" name="email" id="email" />
               </div>
               <div className="field checkbox">
-                <label htmlFor="voicemail">Acceptez-vous que je vous laisse un message sur votre boîte vocale?</label>
+                <label htmlFor="voicemail">{fagree}</label>
                 <input type="checkbox" name="voicemail" id="voicemail" />
               </div>
               <div className="message">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{fmessage}</label>
                 <textarea name="message" id="message" rows="4"></textarea>
               </div>
               <p className="actions">
-                <button className="cta-btn cta-btn--resume special" type="submit">Envoyer</button>
+                <button className="cta-btn cta-btn--resume special" type="submit">{fsend}</button>
               </p>
               <input type="hidden" name="subject" value="Pratique autonome" />
               <input type="hidden" name="form-name" value="contact" />
             </form>
-            <p>Les modes de paiement sont par transfert interac /bancaire.</p>
+            <p>{methods}</p>
           </div>
         </Fade>
       </Container>

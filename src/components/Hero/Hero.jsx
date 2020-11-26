@@ -5,8 +5,8 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { hero, process, pricing, about } = useContext(PortfolioContext);
+  const { title, name, subtitle } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -36,8 +36,8 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <nav className="hero-cta">
             <span className="cta-btn cta-btn--hero">
-              <Link to="proceedings" smooth duration={1000}>
-                Déroulement
+              <Link to="process" smooth duration={1000}>
+                {process.title}
               </Link>
             </span>
             <span className="cta-btn cta-btn--hero">
@@ -47,12 +47,12 @@ const Header = () => {
             </span>
             <span className="cta-btn cta-btn--hero">
               <Link to="pricing" smooth duration={1000}>
-                Tarification
+              {pricing.title}
               </Link>
             </span>
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                À propos
+              {about.title}
               </Link>
             </span>
             <span className="cta-btn cta-btn--hero">

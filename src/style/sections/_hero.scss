@@ -15,6 +15,11 @@
   right: 0;
   z-index: -1;
 
+  @include respond(phone) {
+    min-height: 110vh;
+  height: 110vh;
+  }
+
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
   /* background: url("/src/assets/[your-image].png");

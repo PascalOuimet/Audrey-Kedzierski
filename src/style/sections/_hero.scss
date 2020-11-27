@@ -16,8 +16,9 @@
   z-index: -1;
 
   @include respond(phone) {
-    min-height: 110vh;
-  height: 110vh;
+    min-height: auto;
+    height: auto;
+    padding: 5rem 1.6rem 3rem;    
   }
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
@@ -25,10 +26,6 @@
   /* background: url("/src/assets/[your-image].png");
   background-position: center;
   background-size: cover; */
-
-  @include respond(phone) {
-    padding: 0rem $default-font-size;
-  }
 
   .hero-title {
     font-size: 5.6rem;

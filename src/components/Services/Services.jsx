@@ -1,12 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import Title from '../Title/Title';
-import PortfolioContext from '../../context/context';
 
-const Services = () =>{
-    const { services } = useContext(PortfolioContext);
-    const { p1, p2, p3, servicesList} = services;
+const Services = ({data}) =>{
+    const { p1, p2, p3, servicesList} = data;
 
     return(
     <section id="services">

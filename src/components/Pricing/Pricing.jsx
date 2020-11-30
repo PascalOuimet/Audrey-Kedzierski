@@ -1,12 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import Title from '../Title/Title';
-import PortfolioContext from '../../context/context';
 
-const Pricing = () => {
-    const { pricing } = useContext(PortfolioContext);
-    const { title, individual_1, individual_2, couple_1, couple_2, receipt, star } = pricing;
+const Pricing = ({data}) => {
+    const { title, individual_1, individual_2, couple_1, couple_2, receipt, star } = data;
 
     return (
         <Fade bottom duration={1000} delay={300} distance="0px">

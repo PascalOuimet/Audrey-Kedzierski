@@ -1,12 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
-const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { cta, methods, fname, fphone, femail, fagree, fmessage, fsend, fsuccessPage } = contact;
+const Contact = ({data}) => {
+  const { cta, methods, fname, fphone, femail, fagree, fmessage, fsend, fsuccessPage } = data;
 
   return (
     <section id="contact">

@@ -1,12 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import Title from '../Title/Title';
-import PortfolioContext from '../../context/context';
 
-const Process = () => {
-    const { process } = useContext(PortfolioContext);
-    const { title, p1, p2, p3, p4, p5_1, p5_2 } = process;
+const Process = ({data}) => {
+    const { title, p1, p2, p3, p4, p5_1, p5_2 } = data;
 
     return (
         <section id="process">

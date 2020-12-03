@@ -9,7 +9,8 @@ export const headData = {
 export const heroData = {
   title: 'Audrey Kedzierski',
   name: 'Sexologue',
-  subtitle: 'Services de relation d’aide sexologique et de suivi psychosocial'
+  subtitle: 'Services de relation d’aide sexologique et de suivi psychosocial',
+  quote: 'Nos blessures sont souvent les ouvertures dans les meilleures et les plus belles parties de nous.'
 };
 
 export const processData = {
@@ -94,4 +95,9 @@ export const contactData = {
   fmessage: 'Message',
   fsend: 'Envoyer',
   fsuccessPage: "/succes"
+};
+
+// FOOTER DATA
+export const footerData = {
+  memberof: 'Membre de'
 };

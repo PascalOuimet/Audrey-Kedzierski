@@ -8,7 +8,7 @@ import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import { Link } from "gatsby"
 
-function App({lang, heroData, processData, servicesData, pricingData, aboutData, contactData}) {  
+const App = ({lang, heroData, processData, servicesData, pricingData, aboutData, contactData, footerData}) => {  
 
   const switchLang = lang === "en" ? {url:"/", text:"FR"} : {url:"/en", text:"EN"}
 
@@ -21,7 +21,7 @@ function App({lang, heroData, processData, servicesData, pricingData, aboutData,
       <Pricing data={pricingData} />
       <About data={aboutData} />      
       <Contact data={contactData} />
-      <Footer />
+      <Footer data={footerData} />
     </>
   );
 }

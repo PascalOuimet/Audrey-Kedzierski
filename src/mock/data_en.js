@@ -9,7 +9,8 @@ export const headData = {
 export const heroData = {
   title: 'Audrey Kedzierski',
   name: 'Sexologist',
-  subtitle: 'Sexological counseling and psychosocial services'
+  subtitle: 'Sexological counseling and psychosocial services',
+  quote: 'Our wounds are often the openings into the best and most beautiful parts of us.'
 };
 
 export const processData = {
@@ -94,4 +95,10 @@ export const contactData = {
   fmessage: 'Message',
   fsend: 'Send',
   fsuccessPage: "/success"
+};
+
+
+// FOOTER DATA
+export const footerData = {
+  memberof: 'Member of'
 };

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import OPSQImg from './OPSQImg';
 
-const Footer = () =>
+const Footer = ({data}) =>
   <footer className="footer navbar-static-bottom">
     <Container>
       <span className="back-to-top">
@@ -11,6 +12,7 @@ const Footer = () =>
         </Link>
       </span>
       <hr />
+      <p>{data.memberof} <br/><a href="https://opsq.org/" target="_blank"><OPSQImg/></a></p>
       <p className="footer__text">
         © {new Date().getFullYear()} - {' '}
         <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">

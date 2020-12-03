@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 
 const Header = ({hero, process, pricing, about}) => {
-  const { title, name, subtitle } = hero;
+  const { title, name, subtitle, quote } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -29,7 +29,7 @@ const Header = ({hero, process, pricing, about}) => {
             <br />
             <span className="subtitle">{subtitle || "I'm the Unknown Developer."}</span>
           </h1>
-          <p className="hero-quote"><q>Our wounds are often the openings into the best and most beautiful parts of us.</q><br/>– David Richo</p>
+          <p className="hero-quote"><q>{quote}</q><br/>– David Richo</p>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <nav className="hero-cta">

@@ -70,14 +70,15 @@ export const pricingData = {
   couple_1: 'Couple:',
   couple_2: '$ 105 (1hr15 minute meeting)',
   receipt: 'I will present you with a receipt for your insurance or tax credit upon receipt of payment.',
-  star: '** Pricing adjusted to income also available. Contact me for more information.'
+  star: '* Pricing adjusted to income also available. Contact me for more information.',
+  star2: '** A rate increase may be in effect, contact me directly for current pricing confirmation.'
 }
 
 // ABOUT DATA
 export const aboutData = {
   title: "About me",
   img: 'audrey.jpg',
-  paragraphOne: 'I have a bachelor’s degree in Sexology from the University of Quebec in Montreal. A member in good standing of the Order of Sexologists of Quebec, I have practiced in several settings: home for autonomous seniors 55+, high schools, CLSCs and private practice offices. I have 4 years of experience in intervention.',
+  paragraphOne: 'I have a bachelor’s degree in Sexology from the University of Quebec in Montreal. A member in good standing of the Order of Sexologists of Quebec, I have practiced in several settings: home for autonomous seniors 55+, high schools, CLSCs and private practice offices.',
   paragraphTwo: 'My employment with the CISSSMO as well as my previous work experiences have helped me to deepen the knowledge and skills necessary in the mental health field.',
   paragraphThree: 'I was able to participate in more than 80 hours of diverse trainings. Arising from these opportunities, I have been able to effectively and dynamically assume the various responsibilities entrusted to me such as the position of Clinical Coordinator. I have built the reputation of continuously going above and beyond the expectations of my clients and colleagues.',
   paragraphFour: 'In my entourage, I am considered a trustworthy, dynamic, intellectually curious and available person. I think these qualities shine through in my role as a sexologist.',  

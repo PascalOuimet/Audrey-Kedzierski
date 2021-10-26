@@ -70,14 +70,15 @@ export const pricingData = {
   couple_1: 'Couple :',
   couple_2: '105$ (Rencontre 1hr15 minutes)',
   receipt: 'Je vous remets un reçu pour vos assurances ou crédits d’impôt à la réception du paiement.',
-  star: '** Tarification ajusté au revenu aussi disponible. Me contacter pour plus d\'informations.'
+  star: '* Tarification ajustée au revenu aussi disponible. Me contacter pour plus d\'informations.',
+  star2: '** Une augmentation des tarifs pourrait être en vigueur, communiquer avec moi directement pour une confirmation de tarification actuel.'
 }
 
 // ABOUT DATA
 export const aboutData = {
   title: "À propos",
   img: 'audrey.jpg',
-  paragraphOne: 'Je suis diplômé en Sexologie de l’Université du Québec à Montréal. Membre en règle de l’Ordre des Sexologues du Québec, j’ai exercé dans plusieurs milieux : maison pour personnes âgées autonomes 55+, milieu scolaire, CLSC et bureau de pratique privé. Je cumule 4 ans d’expérience en intervention.',
+  paragraphOne: 'Je suis diplômé en Sexologie de l’Université du Québec à Montréal. Membre en règle de l’Ordre des Sexologues du Québec, j’ai exercé dans plusieurs milieux : maison pour personnes âgées autonomes 55+, milieu scolaire, CLSC et bureau de pratique privé.',
   paragraphTwo: 'Mon emploi parmi le CISSSMO ainsi que mes expériences de travail antérieures m’ont aidée à approfondir les connaissances et les qualités nécessaires au domaine de la relation d’aide et de l’intervention.',
   paragraphThree: 'J’ai ainsi pu participer à plus de 80 heures de formations diversifiées. Découlant de ses opportunités, j’ai su assumer avec efficacité et dynamisme les différentes responsabilités qui m’ont été confiées telles que le poste de Coordonnatrice clinique. J’ai su me forger une réputation de continuellement aller au-delà des attentes de mes clients et de mes collègues.',
   paragraphFour: 'Dans mon entourage, je suis considérée comme une personne de confiance, dynamique, intellectuellement curieuse et disponible. J’estime que ces qualités sont certainement des atouts dans mon rôle de sexologue.',  
